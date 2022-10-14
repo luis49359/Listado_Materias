@@ -14,7 +14,6 @@ class _PrincipalState extends State<Principal> {
     // ignore: prefer_const_constructors
     return Scaffold(
       backgroundColor: Colors.black,
-      //bottomNavigationBar: spotFooter(),
       body: const Login(),
     );
   }

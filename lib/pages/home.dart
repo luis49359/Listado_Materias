@@ -42,29 +42,24 @@ class _HomeState extends State<Home> {
 
   Widget cuerpo() {
     return Center(
-      child: Container(
-        decoration: const BoxDecoration(
-            image: DecorationImage(
-                fit: BoxFit.cover, image: AssetImage("assets/img/fondo.jpg"))),
-        child: Center(
-            child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-              const SizedBox(
-                height: 40,
-              ),
-              iconoUtec(),
-              cbxMaterias(),
-              btnMostrar(),
-              const SizedBox(
-                height: 10,
-              ),
-              btnSalir(),
-              const SizedBox(
-                height: 10,
-              ),
-            ])),
-      ),
+      child: Center(
+          child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+            const SizedBox(
+              height: 40,
+            ),
+            iconoUtec(),
+            cbxMaterias(),
+            btnMostrar(),
+            const SizedBox(
+              height: 10,
+            ),
+            btnSalir(),
+            const SizedBox(
+              height: 10,
+            ),
+          ])),
     );
   }
 
