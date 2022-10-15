@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:listado_materias/pages/inicio.dart';
 
-//Cualquier cosa...!!!
+//No quiero
 
 
 void main() {
