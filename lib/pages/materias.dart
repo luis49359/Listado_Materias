@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:listado_materias/colores/colores.dart';
 import 'package:listado_materias/pages/home.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -34,7 +35,7 @@ class _MateriasState extends State<Materias> {
 
   barraSpotApp() {
     return AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor: primario,
       elevation: 10,
       title: Padding(
         padding: const EdgeInsets.only(left: 10, right: 10),
@@ -44,7 +45,7 @@ class _MateriasState extends State<Materias> {
           const Text(
             "LISTADO MATERIAS",
             style: TextStyle(
-                fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),
+                fontSize: 20, color: blanco, fontWeight: FontWeight.bold),
           )
         ]),
       ),
@@ -82,7 +83,7 @@ class _MateriasState extends State<Materias> {
           child: Column(
             children: List.generate(list1.length, (index) {
               return Padding(
-                padding: const EdgeInsets.only(left: 10, right: 25, top: 50),
+                padding: const EdgeInsets.only(left: 10, right: 25, top: 30),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -91,7 +92,7 @@ class _MateriasState extends State<Materias> {
                       // ignore: prefer_const_constructors
                       style: TextStyle(
                           fontSize: 15,
-                          color: const Color.fromARGB(255, 68, 54, 40),
+                          color: primario,
                           fontWeight: FontWeight.w600),
                     ),
                     const SizedBox(height: 3),

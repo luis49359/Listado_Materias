@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:listado_materias/colores/colores.dart';
 import 'package:listado_materias/pages/home.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -21,7 +22,7 @@ class _LoginState extends State<Login> {
 
   barraSpotApp() {
     return AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor: primario,
       elevation: 10,
       title: Padding(
         padding: const EdgeInsets.only(left: 10, right: 10),
@@ -31,7 +32,7 @@ class _LoginState extends State<Login> {
           const Text(
             "LISTADO MATERIAS",
             style: TextStyle(
-                fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),
+                fontSize: 20, color: blanco, fontWeight: FontWeight.bold),
           )
         ]),
       ),
@@ -119,7 +120,7 @@ class _LoginState extends State<Login> {
                   child: Home(),
                   type: PageTransitionType.scale));
         },
-        color: Colors.blueAccent,
+        color: primario,
         padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 150),
         child: const Text(
           "Ingresar",

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:listado_materias/colores/colores.dart';
 import 'package:listado_materias/pages/login.dart';
 import 'package:listado_materias/pages/materias.dart';
 import 'package:page_transition/page_transition.dart';
@@ -23,7 +24,7 @@ class _HomeState extends State<Home> {
 
   barraSpotApp() {
     return AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor: primario,
       elevation: 10,
       title: Padding(
         padding: const EdgeInsets.only(left: 10, right: 10),
@@ -33,7 +34,7 @@ class _HomeState extends State<Home> {
           const Text(
             "LISTADO MATERIAS",
             style: TextStyle(
-                fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),
+                fontSize: 20, color: blanco, fontWeight: FontWeight.bold),
           )
         ]),
       ),
@@ -93,10 +94,10 @@ Widget cbxMaterias() {
         value: dropdownValue,
         icon: const Icon(Icons.arrow_downward),
         elevation: 16,
-        style: const TextStyle(color: Colors.deepPurple),
+        style: const TextStyle(color: primario),
         underline: Container(
           height: 2,
-          color: Colors.deepPurpleAccent,
+          color: primario,
         ),
         onChanged: (String? value) {
           // This is called when the user selects an item.
@@ -126,7 +127,7 @@ Widget cbxMaterias() {
                   child: const Materias(),
                   type: PageTransitionType.scale));
         },
-        color: Colors.blueAccent,
+        color: primario,
         padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 150),
         child: const Text(
           "Mostrar Materias",
@@ -145,7 +146,7 @@ Widget cbxMaterias() {
                   child: const Login(),
                   type: PageTransitionType.scale));
         },
-        color: Colors.blueAccent,
+        color: primario,
         padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 150),
         child: const Text(
           "Salir",
