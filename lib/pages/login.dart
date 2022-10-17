@@ -59,16 +59,6 @@ class _LoginState extends State<Login> {
     );
   }
 
-  Widget nombreAlumno() {
-    return Container(
-        padding: const EdgeInsets.symmetric(vertical: 20),
-        child: const Text(
-          "Martínez Romero Luis Gerardo - 25-1930-2018",
-          textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 15),
-        ));
-  }
-
   Widget iconoUtec() {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 10),
