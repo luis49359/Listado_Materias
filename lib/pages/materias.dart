@@ -144,7 +144,7 @@ class _MateriasState extends State<Materias> {
                   child: const Home(),
                   type: PageTransitionType.scale));
         },
-        color: Colors.blueAccent,
+        color: primario,
         padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 150),
         child: const Text(
           "Salir",
